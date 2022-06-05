@@ -1,0 +1,25 @@
+[package]
+name = "workouts"
+version = "0.1.0"
+edition = "2021"
+authors=["eric <>"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+near-sdk = "3.1.0"
+rand = "0.8"
+openssl="0.10.40"
+# "4.0.0-pre.7"
+# near-contract-standards = "4.0.0-pre.7"
+
+[lib]
+crate-type = ["cdylib","rlib"]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+overflow-checks = true
