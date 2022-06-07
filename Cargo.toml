@@ -9,7 +9,6 @@ authors=["eric <>"]
 [dependencies]
 near-sdk = "3.1.0"
 rand = "0.8"
-openssl="0.10.40"
 # "4.0.0-pre.7"
 # near-contract-standards = "4.0.0-pre.7"
 

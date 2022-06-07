@@ -45,25 +45,30 @@ impl Workout {
         match intensity {
             Some(value) => match value {
                 1..=10 => {
-                    wrk.push(&String::from("5 push up"));
-                    wrk.push(&String::from("100 jumps"));
+                    wrk.push(&String::from("15 push up"));
+                    wrk.push(&String::from("next,50 jumps"));
+                    wrk.push(&String::from("break for 1 minute then do 10 situps"));
                 }
                 11..=20 => {
-                    wrk.push(&String::from("5 push up"));
-                    wrk.push(&String::from("100 jumps"));
+                    wrk.push(&String::from("20 situps"));
+                    wrk.push(&String::from("next,run for 30 minutes"));
+                    wrk.push(&String::from("next frog jump for 5 minutes"));
                 }
                 21..=30 => {
-                    wrk.push(&String::from("5 push up"));
-                    wrk.push(&String::from("100 jumps"));
+                    wrk.push(&String::from("30 press ups"));
+                    wrk.push(&String::from("next,duckwalk for 10 minutes"));
+                    wrk.push(&String::from("next,jog for 5 minutes"));
                 }
                 31..=40 => {
-                    wrk.push(&String::from("5 push up"));
-                    wrk.push(&String::from("100 jumps"));
+                    wrk.push(&String::from("frog jump for 5 minutes"));
+                    wrk.push(&String::from("next,jog for 10 minutes"));
+                    wrk.push(&String::from("take a 1 minute break,do 20 pullups"));
                 }
 
                 _ => {
-                    wrk.push(&String::from("500 push up"));
-                    wrk.push(&String::from("1000 jumps"));
+                    wrk.push(&String::from("run for 1 hour"));
+                    wrk.push(&String::from("next,60 jumps"));
+                    wrk.push(&String::from("frog jump for 20 minutes"));
                 }
             },
 
